@@ -1,0 +1,11 @@
+size (800,400);
+background(255,255,255);
+fill(0,0,0);
+textSize(16);
+text("Dit is een text bericht!", 20,200);
+circle(450,300,350);
+fill(52,155,52);
+text("Hallo ik ben een zwarte cirkel!", 400,300);
+fill(234,123,67);
+textSize(32);
+text("BOOJA EN HIER HEBBEN WE TEXT NUMMER 3", 50,50);
