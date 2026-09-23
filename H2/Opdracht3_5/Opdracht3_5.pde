@@ -1,0 +1,12 @@
+fullScreen();
+background(0,0,0);
+fill(0,0,0);
+stroke(255,255,255);
+strokeWeight(2);
+ellipse(500,500,300,300);
+ellipse(450,450,20,20);
+ellipse(550,450,20,20);
+noFill();
+arc(450,450,40,40,1*PI,2*PI);
+arc(550,450,40,40,1*PI,2*PI);
+arc(500,500,225,225,0.0,3.1415);
