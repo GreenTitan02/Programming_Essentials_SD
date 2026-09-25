@@ -1,0 +1,13 @@
+size(750,750);
+background(0);
+int cx=250;
+int cy=500;
+fill(255);
+circle(cx,cy,250);
+fill(0);
+circle(cx+45,cy-45,20);
+circle(cx-45,cy-45,20);
+noFill();
+arc(cx+45,cy-45,50,50,1*PI,2*PI);
+arc(cx-45,cy-45,50,50,1*PI,2*PI);
+arc(cx,cy,200,200,0*PI,1*PI);
