@@ -1,7 +1,7 @@
 size(400,400);
 //Logica van bmi
 //HEEFT NOG FATSOENLIJKE INPUT NODIG MAAR IK WEET NOG NIET HOE
-float kg=100.0;
+float kg=70.0;
 float m=1.85;
 
 float hi=m*m;

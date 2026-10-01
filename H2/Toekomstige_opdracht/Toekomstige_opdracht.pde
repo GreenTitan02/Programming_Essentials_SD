@@ -1,6 +1,6 @@
 size(750,750);
 background(128);
-int cx=250;
+int cx=450;
 int cy=250;
 fill(255);
 strokeWeight(3);
