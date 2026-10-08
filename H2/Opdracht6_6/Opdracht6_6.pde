@@ -1,5 +1,5 @@
 //input
-int stage=4;
+int stage=1;
 //id moet 2 cijfers, 1 dot en nog 1 cijfer zijn!, anders staat die niet in het midden!
 String id="69.2";
 //center indicators
@@ -51,6 +51,12 @@ line(cx-100,cy-300,cx+100,cy-300);
 stroke(25);
 line(cx-100,cy-302,cx-100,cy-298);
 line(cx+100,cy-302,cx+100,cy-298);
+//lightboxes
+fill(75);
+noStroke();
+arc(cx,cy-275,155,142,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,142,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,142,1.1*PI,1.9*PI);
 
 noStroke();
 fill(25);
@@ -61,6 +67,41 @@ fill(55);
 ellipse(cx,cy-275,125,125);
 ellipse(cx,cy-125,125,125);
 ellipse(cx,cy+25,125,125);
+//Rainblocker? idk what theyre called...
+stroke(55);
+strokeWeight(3);
+noFill();
+arc(cx,cy-275,155,142,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,142,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,142,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,146,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,146,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,146,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,150,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,150,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,150,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,154,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,154,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,154,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,158,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,158,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,158,1.1*PI,1.9*PI);
+//OUTLINE RAINBLOCKER
+stroke(25);
+strokeWeight(3);
+noFill();
+arc(cx,cy-275,155,140,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,140,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,140,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,160,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,160,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,160,1.1*PI,1.9*PI);
+
 
 //lichten logica
 if(stage==1){;
