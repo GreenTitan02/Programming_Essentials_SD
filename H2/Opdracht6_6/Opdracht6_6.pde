@@ -1,5 +1,5 @@
 //input
-int stage=1;
+int stage=4;
 //id moet 2 cijfers, 1 dot en nog 1 cijfer zijn!, anders staat die niet in het midden!
 String id="69.2";
 //center indicators
@@ -44,13 +44,46 @@ text(id,cx-30,cy+130);
 strokeWeight(3);
 stroke(25);
 fill(128);
-ellipse(cx+0,cy-300,200,100);
+ellipse(cx+0,cy-300,200,150);
 rect(cx-100,cy-300,200,400);
 stroke(128);
 line(cx-100,cy-300,cx+100,cy-300);
 stroke(25);
 line(cx-100,cy-302,cx-100,cy-298);
 line(cx+100,cy-302,cx+100,cy-298);
+
+noStroke();
+fill(25);
+ellipse(cx,cy-275,131,131);
+ellipse(cx,cy-125,131,131);
+ellipse(cx,cy+25,131,131);
+fill(55);
+ellipse(cx,cy-275,125,125);
+ellipse(cx,cy-125,125,125);
+ellipse(cx,cy+25,125,125);
+
+//lichten logica
+if(stage==1){;
+  fill(255,25,25);
+  ellipse(cx,cy-275,125,125);
+}else if(stage==2){;
+  fill(255,190,25);
+  ellipse(cx,cy-125,125,125);
+}else if(stage==3){;
+  fill(25,255,25);
+  ellipse(cx,cy+25,125,125);
+}else{;
+  fill(255,25,255);
+  ellipse(cx,cy-275,125,125);
+  ellipse(cx,cy-125,125,125);
+  ellipse(cx,cy+25,125,125);
+  //Text error display
+  fill(255,255,0);
+  textSize(48);
+  text("NaN Error!",10,58);
+  fill(205,0,205);
+  text("NaN Error!",9,57);
+};
 
 //CENTER NOTEDOWN
 strokeWeight(5);
