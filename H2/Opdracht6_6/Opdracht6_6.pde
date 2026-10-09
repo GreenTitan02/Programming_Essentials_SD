@@ -1,5 +1,5 @@
 //input
-int stage=1;
+int stage=3;
 //id moet 2 cijfers, 1 dot en nog 1 cijfer zijn!, anders staat die niet in het midden!
 String id="69.2";
 //center indicators
@@ -28,13 +28,20 @@ fill(245);
 ellipse(cx,cy-250,344,344);
 ellipse(cx,cy+50,344,344);
 rect(cx-172,cy-253,344,294);
-//black outline_line
+//black line
 fill(25);
+ellipse(cx,cy-250,320,320);
+ellipse(cx,cy+50,320,320);
+rect(cx-160,cy-235,320,285);
+//black panel
+fill(45);
 ellipse(cx,cy-250,314,314);
 ellipse(cx,cy+50,314,314);
 rect(cx-157,cy-238,314,279);
 //ID BOX
-fill(55);
+fill(25);
+rect(cx-43,cy+97,86,46);
+fill(65);
 rect(cx-40,cy+100,80,40);
 fill(205);
 textSize(32);
