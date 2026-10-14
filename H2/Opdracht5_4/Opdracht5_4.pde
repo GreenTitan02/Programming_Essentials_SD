@@ -1,7 +1,7 @@
 fullScreen();
 background(128);
-int cx=450;
-int cy=250;
+int cx=350;
+int cy=450;
 String naam1="Mumbo";
 String naam2="Snorloos";
 String naam3="Smug";

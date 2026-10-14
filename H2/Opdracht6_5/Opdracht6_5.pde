@@ -1,4 +1,4 @@
-float age=70;
+float age=-8;
 if(age<0){;
   println("Aborted");
 }else if (age<2){;
