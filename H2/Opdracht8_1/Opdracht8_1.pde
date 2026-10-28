@@ -1,0 +1,142 @@
+//input
+int stage=1;
+//id moet 2 cijfers, 1 dot en nog 1 cijfer zijn!, anders staat die niet in het midden!
+String id="69.2";
+//center indicators
+int cx=250;
+int cy=450;
+void setup(){
+  size(500,800);
+  background(175,175,255);
+}
+//stoplicht
+//pole
+void draw(){
+strokeWeight(51);
+stroke(15);
+line(cx,cy+000,cx,cy+400);
+strokeWeight(45);
+stroke(128);
+line(cx,cy+000,cx,cy+400);
+
+//backpanel
+noStroke();
+fill(15);
+ellipse(cx,cy-250,350,350);
+ellipse(cx,cy+50,350,350);
+rect(cx-175,cy-250,350,300);
+//white outline
+fill(245);
+ellipse(cx,cy-250,344,344);
+ellipse(cx,cy+50,344,344);
+rect(cx-172,cy-253,344,294);
+//black line
+fill(15);
+ellipse(cx,cy-250,320,320);
+ellipse(cx,cy+50,320,320);
+rect(cx-160,cy-235,320,285);
+//black panel
+fill(45);
+ellipse(cx,cy-250,314,314);
+ellipse(cx,cy+50,314,314);
+rect(cx-157,cy-238,314,279);
+//ID BOX
+fill(15);
+rect(cx-43,cy+97,86,46);
+fill(65);
+rect(cx-40,cy+100,80,40);
+fill(205);
+textSize(32);
+text(id,cx-30,cy+130);
+
+//frontal box
+strokeWeight(3);
+stroke(15);
+fill(128);
+ellipse(cx+0,cy-300,200,150);
+rect(cx-100,cy-300,200,400);
+stroke(128);
+line(cx-100,cy-300,cx+100,cy-300);
+stroke(15);
+line(cx-100,cy-302,cx-100,cy-298);
+line(cx+100,cy-302,cx+100,cy-298);
+//lightboxes
+fill(75);
+noStroke();
+arc(cx,cy-275,155,142,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,142,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,142,1.1*PI,1.9*PI);
+
+noStroke();
+fill(15);
+ellipse(cx,cy-275,131,131);
+ellipse(cx,cy-125,131,131);
+ellipse(cx,cy+25,131,131);
+fill(55);
+ellipse(cx,cy-275,125,125);
+ellipse(cx,cy-125,125,125);
+ellipse(cx,cy+25,125,125);
+//Rainblocker? idk what theyre called...
+stroke(55);
+strokeWeight(3);
+noFill();
+arc(cx,cy-275,155,142,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,142,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,142,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,146,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,146,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,146,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,150,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,150,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,150,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,154,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,154,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,154,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,158,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,158,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,158,1.1*PI,1.9*PI);
+//OUTLINE RAINBLOCKER
+stroke(15);
+strokeWeight(3);
+noFill();
+arc(cx,cy-275,155,140,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,140,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,140,1.1*PI,1.9*PI);
+
+arc(cx,cy-275,155,160,1.1*PI,1.9*PI);
+arc(cx,cy-125,155,160,1.1*PI,1.9*PI);
+arc(cx,cy+25,155,160,1.1*PI,1.9*PI);
+
+
+//lichten logica
+if(stage==1){;
+  fill(255,25,25);
+  ellipse(cx,cy-275,125,125);
+}else if(stage==2){;
+  fill(255,190,25);
+  ellipse(cx,cy-125,125,125);
+}else if(stage==3){;
+  fill(25,255,25);
+  ellipse(cx,cy+25,125,125);
+}else{;
+  fill(255,25,255);
+  ellipse(cx,cy-275,125,125);
+  ellipse(cx,cy-125,125,125);
+  ellipse(cx,cy+25,125,125);
+  //Text error display
+  fill(255,255,0);
+  textSize(48);
+  text("NaN Error!",10,58);
+  fill(205,0,205);
+  text("NaN Error!",9,57);
+};
+
+//CENTER NOTEDOWN
+strokeWeight(5);
+stroke(255,0,0);
+line(cx,cy,cx,cy);
+}
