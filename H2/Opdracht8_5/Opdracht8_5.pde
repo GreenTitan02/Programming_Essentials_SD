@@ -14,5 +14,6 @@ void tijd(){
   println("Het is nu "+hour()+":"+ minute()+":"+second()+"!");
 }
 void tijdtextrender(){
+  fill(55,255,55);
   text("Het is nu "+hour()+":"+ minute()+":"+second()+"!",20,100);
 }
