@@ -9,7 +9,7 @@ void draw(){
 }
 
 void drawflying(){
-  background(230,230,255);
+  background(170,170,255);
 }
 void drawgrass(){
   fill(30,90,30);
@@ -23,4 +23,6 @@ void drawfire(){
 void drawsteel(){
   fill(135,135,135);
   rect(200,200,300,200);
+  fill(205,205,205);
+  triangle(175,200,525,200,350,125);
 }
