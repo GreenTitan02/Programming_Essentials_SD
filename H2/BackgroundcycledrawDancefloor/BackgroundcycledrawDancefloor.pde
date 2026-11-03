@@ -24,7 +24,6 @@ void draw(){
   background(colour1,colour2,colour3);
   fill(colour2,colour3,colour1);
   rect(0,0,200,200);
-  circle(200,200,75);
   fill(colour3,colour1,colour2);
   rect(200,0,200,200);
   fill(colour3,colour2,colour1);
