@@ -137,3 +137,4 @@ if(stage==1){;
 strokeWeight(5);
 stroke(255,0,0);
 line(cx,cy,cx,cy);
+//Sorry rick, ik kan de originele versie hiervan nu niet vinden. Dus vandaar de gedecoreerde verie met de verlichtinglogica... Als je wilt dat ik de verlichtinglogica weg moet halen zeg het even!
