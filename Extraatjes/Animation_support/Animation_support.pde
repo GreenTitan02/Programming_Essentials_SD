@@ -1,15 +1,15 @@
-int totalFrames = 4; 
+int totalFrames = 8; 
 PImage[] frames = new PImage[totalFrames];
 int currentFrame = 0;
 
 void setup() {
-  size(600, 600);
-  frameRate(10); // Controls how fast the animation cycles (10 frames per second)
+  size(512, 512);
+  frameRate(8);
   
   // Load images into the array
-  // Assumes your files are named frame_0.png, frame_1.png, etc.
+  // file name frame0,frame1,ect
   for (int i = 0; i < totalFrames; i++) {
-    frames[i] = loadImage("frame_" + i + ".png");
+    frames[i] = loadImage("frame" + i + ".png");
   }
 }
 
@@ -17,7 +17,7 @@ void draw() {
   background(200);
   
   // Draw the current frame of the animation
-  image(frames[currentFrame], 100, 100);
+  image(frames[currentFrame], 0, 0);
   
   // Advance to the next frame, loop back to 0 at the end
   currentFrame = (currentFrame + 1) % totalFrames;
